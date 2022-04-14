@@ -13,7 +13,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#libroContainer div{
+#libroContainer div {
     font-family: 'Cambria', sans-serif;
     text-align: center;
     background-color: rgba(210, 210, 170, 0.7);
@@ -22,7 +22,8 @@ body {
     margin: 15px;
     padding-bottom: 15px;
 }
-#libroContainer div img{
+
+#libroContainer div img {
     width: 50%;
     height: 75%;
 }
