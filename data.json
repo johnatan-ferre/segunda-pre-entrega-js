@@ -1,0 +1,73 @@
+[{
+
+        "id": 1,
+        "title": "1984",
+        "author": "George Orwell",
+        "year": "1949",
+        "theme": "Distopía",
+        "cover": "./images/1984.png"
+    },
+    {
+
+        "id": 2,
+        "title": "Dune",
+        "author": "Frank Herbert",
+        "year": "1965",
+        "theme": "Ciencia Ficción",
+        "cover": "./images/dune.png"
+    },
+    {
+
+        "id": 3,
+        "title": "Fahrenheit 451",
+        "author": "Ray Bradbury",
+        "year": "1953",
+        "theme":"Ciencia Ficción",
+        "cover":"./images/fahrenheit451.png"
+    },
+    {
+
+        "id": 4,
+        "title": "Hojas de Hierba",
+        "author": "Walt Whitman",
+        "year": "1855",
+        "theme": "Naturalismo",
+        "cover":"./images/hojas-de-hierba.png"
+    },
+    {
+
+        "id": 5,
+        "title": "Hyperion",
+        "author": "Dan Simmons",
+        "year": "1989",
+        "theme":"Ciencia Ficción",
+        "cover":"./images/hyperion.png"
+    },
+    {
+
+        "id": 6,
+        "title": "La isla del tesoro",
+        "author": "Robert Stevenson",
+        "year": "1883",
+        "theme":"Aventura",
+        "cover":"./images/la-isla-del-tesoro.png"
+    },
+    {
+
+        "id": 7,
+        "title": "Sapiens: De animales a dioses",
+        "author": "Yuval Harari",
+        "year": "2011",
+        "theme": "Historia",
+        "cover": "./images/sapiens.png"
+    },
+    {
+
+        "id": 8,
+        "title": "¡Viven!",
+        "author": "Piers Read",
+        "year": "1974",
+        "theme":"Biográfico",
+        "cover": "./images/viven.png"
+    }
+]
