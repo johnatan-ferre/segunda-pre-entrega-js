@@ -5,36 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Biblioteca Personal</title>
 
 </head>
 
-<body>
-    <h1>Biblioteca personal</h1>
+<body id="body">
+    <h1 class="titulo">Biblioteca personal</h1>
+    <h2>Ingrese los datos del libro</h2>
     <div id="divForm">
-        <h3>Ingrese los datos del libro</h3>
         <form>
             <input type="text" placeholder="Título" id="title" /><br><br>
             <input type="text" placeholder="Autor" id="author" /><br><br>
             <input type="number" placeholder="Año de publicación" id="year" /><br><br>
-            <input type="text" placeholder="Género" id="genre" /><br><br>
-            <input type="text" placeholder="Temática" id="theme" /><br><br>
+            <!-- <input type="text" placeholder="Género" id="genre" /><br><br>
+            <input type="text" placeholder="Temática" id="theme" /><br><br> -->
             <input type="text" placeholder="Portada" id="cover" /><br><br>
-            <button type="submit" id="btnCreate">Agregar</button>
+            <button type="submit" id="btnCreate">Agregar Libro</button>
         </form>
         <br><br>
     </div>
+
+
+
+    <div>
+    <h2>Busque más información aquí</h2>
+    <input type="search" class="form-control" id="queryLibro" placeholder="Título, Autor, etc " autocomplete="off"
+            autofocus>
+        <input type="button" class="btn btn-success srcBtn" id="busqueda" value="Buscar" name="btn">
+    </div>
+
+    <div class="resultado" id="res">
+        <div id="display-consulta">
+
+        </div>
+    </div>
+
+
 
     <div id="libroContainer">
     </div>
 
     <script src="libro.js"></script>
     <script src="alertas.js"></script>
-    <script src="async.js"></script>
+    <script src="consultalibro.js"></script>
+    <!-- <script src="async.js"></script> -->
     <script src="app.js"></script>
 
 </body>

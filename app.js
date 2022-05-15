@@ -1,3 +1,5 @@
+
+
 let coleccionLibros = new Array();
 const claveLocal = "coleccionLibros";
 
@@ -20,8 +22,8 @@ function validForm() {
     let inputTitle = document.getElementById("title").value;
     let inputAuthor = document.getElementById("author").value;
     let inputYear = document.getElementById("year").value;
-    let inputGenre = document.getElementById("genre").value;
-    let inputTheme = document.getElementById("theme").value;
+    // let inputGenre = document.getElementById("genre").value;
+    // let inputTheme = document.getElementById("theme").value;
     let inputCover = document.getElementById("cover").value;
 
     if (!inputTitle) {
@@ -39,15 +41,15 @@ function validForm() {
         return false;
     }
 
-    if (!inputGenre) {
-        alert("Ingrese el género");
-        return false;
-    }
+    // if (!inputGenre) {
+    //     alert("Ingrese el género");
+    //     return false;
+    // }
 
-    if (!inputTheme) {
-        alert("Ingrese la temática");
-        return false;
-    }
+    // if (!inputTheme) {
+    //     alert("Ingrese la temática");
+    //     return false;
+    // }
 
     if (!inputCover) {
         alert("Ingrese la ruta de la portada");
@@ -62,13 +64,14 @@ function createLibro() {
     let title = document.getElementById("title").value;
     let author = document.getElementById("author").value;
     let year = document.getElementById("year").value;
-    let genre = document.getElementById("genre").value;
-    let theme = document.getElementById("theme").value;
+    // let genre = document.getElementById("genre").value;
+    // let theme = document.getElementById("theme").value;
     let cover = document.getElementById("cover").value;
 
 
+
     //Creo libro, pusheo al array originalmente vacío y después guardo en el local storage
-    let libro = new Libro(title, author, year, genre, theme, cover);
+    let libro = new Libro(title, author, year, cover);
     coleccionLibros.push(libro);
     localStorage.setItem(claveLocal, JSON.stringify(coleccionLibros));
 
@@ -78,16 +81,16 @@ function createLibro() {
 //Interacción con el DOM para crear nuevos elementos
 function createCardLibro(title, author, cover) {
     let newDiv = document.createElement("div");
-    let newH3 = document.createElement("h3");
+    let newH2 = document.createElement("h2");
     let newH4 = document.createElement("h4");
     let newImg = document.createElement("img");
 
     newDiv.id = "div" + title + author + cover;
-    newH3.textContent = title;
+    newH2.textContent = title;
     newH4.textContent = author;
     newImg.src = cover;
 
-    newDiv.appendChild(newH3);
+    newDiv.appendChild(newH2);
     newDiv.appendChild(newH4);
     newDiv.appendChild(newImg);
 
@@ -102,8 +105,8 @@ function resetForm() {
     document.getElementById("title").value = "";
     document.getElementById("author").value = "";
     document.getElementById("year").value = "";
-    document.getElementById("genre").value = "";
-    document.getElementById("theme").value = "";
+    // document.getElementById("genre").value = "";
+    // document.getElementById("theme").value = "";
     document.getElementById("cover").value = "";
 }
 
